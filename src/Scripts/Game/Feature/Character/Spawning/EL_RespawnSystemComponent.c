@@ -55,7 +55,18 @@ class EL_RespawnSystemComponent : EPF_BaseRespawnSystemComponent
 		}
 		#endif
 
+		GetGame().GetMenuManager().OpenMenu(ChimeraMenuPreset.EL_CharacterSelection);
+		
 		super.HandlePlayerLoad(characterContext);
+<<<<<<< Updated upstream
+=======
+		
+		
+		Print("ok");
+		
+		
+		
+>>>>>>> Stashed changes
 	}
 
 	//------------------------------------------------------------------------------------------------

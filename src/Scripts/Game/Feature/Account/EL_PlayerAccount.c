@@ -19,7 +19,7 @@ class EL_PlayerAccount : EPF_PersistentScriptedState
 
 	//------------------------------------------------------------------------------------------------
 	bool HasCharacters()
-	{
+	{	
 		return !m_aCharacters.IsEmpty();
 	}
 
@@ -57,6 +57,7 @@ class EL_PlayerAccount : EPF_PersistentScriptedState
 		account.SetPersistentId(playerUid);
 		return account;
 	}
+<<<<<<< Updated upstream
 };
 
 class EL_PlayerCharacter
@@ -85,3 +86,6 @@ class EL_PlayerCharacter
 		return character;
 	}
 };
+=======
+};
+>>>>>>> Stashed changes
