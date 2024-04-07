@@ -57,35 +57,6 @@ class EL_PlayerAccount : EPF_PersistentScriptedState
 		account.SetPersistentId(playerUid);
 		return account;
 	}
-<<<<<<< Updated upstream
+
 };
 
-class EL_PlayerCharacter
-{
-	protected string m_sId;
-	protected ResourceName m_rPrefab;
-
-	//------------------------------------------------------------------------------------------------
-	string GetId()
-	{
-		return m_sId;
-	}
-
-	//------------------------------------------------------------------------------------------------
-	ResourceName GetPrefab()
-	{
-		return m_rPrefab;
-	}
-
-	//------------------------------------------------------------------------------------------------
-	static EL_PlayerCharacter Create(ResourceName prefab)
-	{
-		EL_PlayerCharacter character();
-		character.m_sId = EPF_PersistenceIdGenerator.Generate();
-		character.m_rPrefab = prefab;
-		return character;
-	}
-};
-=======
-};
->>>>>>> Stashed changes

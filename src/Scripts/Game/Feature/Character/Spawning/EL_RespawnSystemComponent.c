@@ -34,7 +34,7 @@ class EL_RespawnSystemComponent : EPF_BaseRespawnSystemComponent
 			ResourceName prefab = m_aDefaultCharacterPrefabs.GetRandomElement();
 			if (prefab)
 			{
-				activeCharacter = EL_PlayerCharacter.Create(prefab);
+				activeCharacter = EL_PlayerCharacter.Create(prefab, "Test", "Test");
 				account.AddCharacter(activeCharacter, true);
 			}
 			else
@@ -58,15 +58,12 @@ class EL_RespawnSystemComponent : EPF_BaseRespawnSystemComponent
 		GetGame().GetMenuManager().OpenMenu(ChimeraMenuPreset.EL_CharacterSelection);
 		
 		super.HandlePlayerLoad(characterContext);
-<<<<<<< Updated upstream
-=======
 		
 		
 		Print("ok");
 		
 		
 		
->>>>>>> Stashed changes
 	}
 
 	//------------------------------------------------------------------------------------------------
