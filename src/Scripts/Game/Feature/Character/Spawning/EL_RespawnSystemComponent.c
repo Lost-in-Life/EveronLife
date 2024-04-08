@@ -25,9 +25,43 @@ class EL_RespawnSystemComponent : EPF_BaseRespawnSystemComponent
 	/*protected --Hotfix for 1.0 DO NOT CALL THIS MANUALLY*/
 	void OnAccountLoaded(EL_PlayerAccount account, Managed context)
 	{
-		Tuple2<int, string> characterContext = Tuple2<int, string>.Cast(context);
+		
+		Print(context.ToString());
+		Print(m_aDefaultCharacterPrefabs.ToString());
+		
+		/*ResourceName prefab = m_aDefaultCharacterPrefabs.GetRandomElement();
+		EL_PlayerCharacter createeCharacter = EL_PlayerCharacter.Create(prefab, "Test1111", "Test2332321");
+				account.AddCharacter(createeCharacter, true);
+		*/
+		array<EL_PlayerCharacter> characters = account.GetCharacters();
+		foreach (EL_PlayerCharacter character : characters) 
+		{
+			// Add Logic for character selection
+		}
+		
+		if (characters.Count() <= 0) {
+			GetGame().GetMenuManager().OpenMenu(ChimeraMenuPreset.EL_CharacterSelection);
+		} else {
+			
+			Tuple2<int, string> characterContext = Tuple2<int, string>.Cast(context);
+			EL_PlayerCharacter activeCharacter = account.GetActiveCharacter();
+			characterContext.param2 = activeCharacter.GetId();
+			
+			bool hasCharData = activeCharacter != null;
+			#ifndef WORKBENCH
+				// New account, skip to new character spawn
+				if	(!hasCharData)
+				{
+					OnCharacterDataLoaded(EDF_EDbOperationStatusCode.SUCCESS, null, characterContext);
+					return;
+				}
+			#endif
 
-		EL_PlayerCharacter activeCharacter = account.GetActiveCharacter();
+			super.HandlePlayerLoad(characterContext);
+			
+		}
+		
+		/*
 		bool hasCharData = activeCharacter != null;
 		if (!hasCharData)
 		{
@@ -46,22 +80,8 @@ class EL_RespawnSystemComponent : EPF_BaseRespawnSystemComponent
 
 		characterContext.param2 = activeCharacter.GetId();
 
-		#ifndef WORKBENCH
-		// New account, skip to new character spawn
-		if	(!hasCharData)
-		{
-			OnCharacterDataLoaded(EDF_EDbOperationStatusCode.SUCCESS, null, characterContext);
-			return;
-		}
-		#endif
-
-		GetGame().GetMenuManager().OpenMenu(ChimeraMenuPreset.EL_CharacterSelection);
 		
-		super.HandlePlayerLoad(characterContext);
-		
-		
-		Print("ok");
-		
+		*/
 		
 		
 	}

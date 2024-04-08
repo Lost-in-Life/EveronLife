@@ -1,3 +1,163 @@
-FrameWidgetClass "{610E9604F31F1349}" {
+FrameWidgetClass {
  Name "rootFrame"
+ {
+  PanelWidgetClass "{610F04A62986BCC7}" {
+   Name "Panel0"
+   Slot FrameWidgetSlot "{610F04A62986BCF6}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 364.141
+    OffsetRight -364.141
+    SizeY 600.766
+    OffsetBottom -600.766
+    Alignment 0.5 0.5
+   }
+   Color 0.053 0.053 0.053 1
+   style full
+   {
+    ButtonWidgetClass "{610F04A518A47901}" {
+     Name "Create"
+     Slot FrameWidgetSlot "{610F04A518A47930}" {
+      Anchor 0.5 1 0.5 1
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 140
+      OffsetRight -140
+      SizeY 40
+      OffsetBottom -40
+      Alignment 0.5 2
+     }
+     Color 0.738 0.738 0.738 1
+     components {
+      SCR_InputButtonComponent "{610F3419E041BCF8}" {
+       m_BackgroundSelected 0.76 0.392 0.08 0.3
+       m_sActionName "Create"
+       m_sLabel "#AR-Button_Confirm-UC"
+       m_iHeightInPixel 40
+       m_ActionDefault 0.761 0.386 0.078 1
+       m_ActionHovered 1 0.597 0.198 1
+       m_ActionDisabled 0.074 0.074 0.074 1
+       m_ActionToggled 0.597 0.061 0.476 1
+       m_fHoldIndicatorHoldPosition 3
+      }
+     }
+     {
+      TextWidgetClass "{610F04A53C161EF2}" {
+       Name "Text0"
+       Slot ButtonWidgetSlot "{610F04A53C161E17}" {
+       }
+       Color 0 0 0 1
+       Text "Create"
+      }
+     }
+    }
+    TextWidgetClass "{610F04A287078F01}" {
+     Name "Text0"
+     Slot FrameWidgetSlot "{610F04A287078F1A}" {
+      Anchor 0.5 0.5 0.5 0.5
+      OffsetLeft 0
+      OffsetTop 0
+      SizeX 100
+      OffsetRight -100
+      SizeY 30
+      OffsetBottom -30
+      Alignment 1.4 10
+      SizeToContent 1
+     }
+     Pivot 1 0.5
+     Text "Lastname"
+     "Font Size" 18
+     "Min Font Size" 18
+     "Vertical Alignment" Center
+    }
+    PanelWidgetClass "{610F04A7D8526AD8}" {
+     Name "Panel0"
+     Slot FrameWidgetSlot "{610F04A7D8526A00}" {
+      Anchor 0.5 0.5 0.5 0.5
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 200
+      OffsetRight -200
+      SizeY 40
+      OffsetBottom -40
+      Alignment 0.5 6
+     }
+     {
+      EditBoxWidgetClass "{610F04A7F1FEC952}" {
+       Name "Firstname"
+       Slot FrameWidgetSlot "{610F04A7F1FECB13}" {
+        Anchor 0 0.5 0 0.5
+        PositionX 0
+        OffsetLeft 0
+        OffsetTop 0
+        SizeX 190
+        OffsetRight -190
+        SizeY 40
+        OffsetBottom -40
+        Alignment -0.05 0.5
+       }
+       "Use placeholder text" 1
+       "Placeholder text" "Firstname"
+      }
+     }
+    }
+    PanelWidgetClass "{610F04A7F9E6A27F}" {
+     Name "Panel1"
+     Slot FrameWidgetSlot "{610F04A7D8526A00}" {
+      Anchor 0.5 0.5 0.5 0.5
+      OffsetLeft 0
+      OffsetTop 0
+      SizeX 200
+      OffsetRight -200
+      SizeY 40
+      OffsetBottom -40
+      Alignment 0.5 4
+     }
+     {
+      EditBoxWidgetClass "{610F04A7F0E079E2}" {
+       Name "Lastname"
+       Slot FrameWidgetSlot "{610F04A7F0E079F5}" {
+        Anchor 0 0.5 0 0.5
+        OffsetLeft 0
+        OffsetTop 0
+        SizeX 190
+        OffsetRight -190
+        SizeY 40
+        OffsetBottom -40
+        Alignment -0.05 0.5
+       }
+       "Use placeholder text" 1
+       "Placeholder text" "Lastname"
+      }
+     }
+    }
+    TextWidgetClass "{610F04A21BC31530}" {
+     Name "Text1"
+     Slot FrameWidgetSlot "{610F04A287078F1A}" {
+      Anchor 0.5 0.5 0.5 0.5
+      OffsetLeft 0
+      OffsetTop 0
+      SizeX 100
+      OffsetRight -100
+      SizeY 30
+      OffsetBottom -30
+      Alignment 1.4 14.5
+      SizeToContent 1
+     }
+     Pivot 1 0.5
+     Text "Firstname"
+     "Font Size" 18
+     "Min Font Size" 18
+     "Vertical Alignment" Center
+    }
+   }
+  }
+ }
 }

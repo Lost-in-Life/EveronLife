@@ -4,7 +4,7 @@ class EL_PlayerCharacter
 	protected ResourceName m_rPrefab;
 	protected string m_firstname;
 	protected string m_lastname;
-	/*protected*/ ref array<ref EL_CharacterLicence> m_aLicences = {};
+	protected ref array<ref EL_CharacterLicence> m_aLicences = {};
 
 	//------------------------------------------------------------------------------------------------
 	string GetId()
