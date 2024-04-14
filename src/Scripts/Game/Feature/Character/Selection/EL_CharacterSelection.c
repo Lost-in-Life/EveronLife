@@ -77,6 +77,7 @@ class EL_CharacterSelection : ChimeraMenuBase
 	
 	void sendCreateChar()
 	{
+
 		// For getting the Account object of the player that pressed the button.
 		int localPlayerId = GetGame().GetPlayerController().GetPlayerId();
 		EL_PlayerAccount account = EL_PlayerAccountManager.GetInstance().GetFromCache(localPlayerId);

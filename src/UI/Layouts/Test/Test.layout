@@ -1,6 +1,20 @@
 FrameWidgetClass {
  Name "rootFrame"
  {
+  BlurWidgetClass "{611B064C43DC2F7E}" {
+   Name "Blur0"
+   Slot FrameWidgetSlot "{611B064C43DC2EAB}" {
+    PositionX -29.732
+    OffsetLeft -29.732
+    PositionY -9.291
+    OffsetTop -9.291
+    SizeX 1980.56
+    OffsetRight -1950.83
+    SizeY 1115.23
+    OffsetBottom -1105.94
+   }
+   Intensity 0.5
+  }
   PanelWidgetClass "{610F04A62986BCC7}" {
    Name "Panel0"
    Slot FrameWidgetSlot "{610F04A62986BCF6}" {

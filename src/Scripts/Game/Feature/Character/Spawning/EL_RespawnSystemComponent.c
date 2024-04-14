@@ -26,13 +26,13 @@ class EL_RespawnSystemComponent : EPF_BaseRespawnSystemComponent
 	void OnAccountLoaded(EL_PlayerAccount account, Managed context)
 	{
 		
-		Print(context.ToString());
+		Print("COntext: " + context.ToString());
 		Print(m_aDefaultCharacterPrefabs.ToString());
 		
-		/*ResourceName prefab = m_aDefaultCharacterPrefabs.GetRandomElement();
+		ResourceName prefab = m_aDefaultCharacterPrefabs.GetRandomElement();
 		EL_PlayerCharacter createeCharacter = EL_PlayerCharacter.Create(prefab, "Test1111", "Test2332321");
 				account.AddCharacter(createeCharacter, true);
-		*/
+		
 		array<EL_PlayerCharacter> characters = account.GetCharacters();
 		foreach (EL_PlayerCharacter character : characters) 
 		{

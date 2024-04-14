@@ -27,7 +27,7 @@ EL_GameModeRoleplay {
        m_ePurpose PURPOSE_LOADOUT_PROXY
       }
       EL_DefaultLoadoutItem "{5DE92DF82CDA1016}" {
-       m_rPrefab "{C7923961D7235D70}Prefabs/Characters/Footwear/CombatBoots_Soviet_01.et"
+       m_rPrefab "{DAAFD15478BDE1C3}Prefabs/Characters/Footwear/CombatBoots_US_01.et"
        m_ePurpose PURPOSE_LOADOUT_PROXY
       }
      }

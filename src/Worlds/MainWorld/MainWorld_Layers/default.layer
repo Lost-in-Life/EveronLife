@@ -1,0 +1,23 @@
+Tree : "{1C6F9AD2669C17F9}Prefabs/Vegetation/Tree/t_malus_domestica_2s.et" {
+ coords 4458.27 0 10551.543
+}
+$grp Tree : "{CEFEBF266E7040A9}Prefabs/Vegetation/Tree/t_prunus_domestica_2s.et" {
+ {
+  coords 4425.566 0 10502.926
+ }
+ {
+  coords 4401.612 0 10534.152
+ }
+ {
+  coords 4389.783 0 10535.882
+ }
+ {
+  coords 4379.1 0 10510.598
+ }
+ {
+  coords 4382.862 0 10500.85
+ }
+ {
+  coords 4455.792 -0 10551.749
+ }
+}

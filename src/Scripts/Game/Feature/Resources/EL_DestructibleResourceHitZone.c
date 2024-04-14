@@ -27,6 +27,10 @@ class EL_DestructibleResourceHitZone : SCR_HitZone
 			foreach (EL_ResourceDestructionTool tool : settings.m_aTools)
 			{
 				if (tool.m_rTool == currentTool)
+				Print("TEst");
+				
+					Print("Position: " + damageContext.hitPosition);
+					Print("Direction: " + damageContext.hitDirection);
 					return tool.m_fHitDamage;
 			}
 		}
